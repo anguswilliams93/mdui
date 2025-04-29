@@ -4,4 +4,4 @@
 .next
 node_modules
 mdui.code-workspace
-.pycache
+api\__pycache__
