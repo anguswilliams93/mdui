@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer utilities {
+  .prose .dark\:prose-invert h1,
+  .prose .dark\:prose-invert h2,
+  .prose .dark\:prose-invert h3,
+  .prose .dark\:prose-invert h4,
+  .prose .dark\:prose-invert h5,
+  .prose .dark\:prose-invert h6 {
+    color: white;
+  }
+
+  .prose .dark\:prose-invert p,
+  .prose .dark\:prose-invert li,
+  .prose .dark\:prose-invert strong {
+    color: #e5e7eb;
+  }
+}
+
+/* Dark mode overrides */
+.dark body {
+  background-color: #121212;
+  color: #e5e7eb;
+} 
